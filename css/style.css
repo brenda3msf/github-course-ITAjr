@@ -25,7 +25,7 @@ a {
 #container .logo {
   display: block;
   position: relative;
-  left: 3px;
+  left: 9px;
   width: 352px;
   margin-bottom: 45px;
 }
@@ -75,7 +75,7 @@ a {
 
 .or hr {
   display: inline-block;
-  width: 8.47em;
+  width: 9.28em;
   background-color: #ddd;
   margin: 0;
   border: 0.8px #ddd solid;
@@ -83,6 +83,7 @@ a {
 
 .or p {
   display: inline-block;
+  font-size: 14px;
   text-align: center;
   position: relative;
   top: 3px;
