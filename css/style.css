@@ -17,7 +17,7 @@ a {
 }
 
 #container {
-  margin: 37px auto;
+  margin: 34px auto;
   max-width: 400px;
   padding: 12px;
 }
@@ -35,6 +35,7 @@ a {
   background-color: #fff;
   padding: 15px 25px;
   color: #333;
+  border-radius: 8px;
 }
 
 .form-wrap h1 {
@@ -75,7 +76,7 @@ a {
 
 .or hr {
   display: inline-block;
-  width: 9.28em;
+  width: 9.2em;
   background-color: #ddd;
   margin: 0;
   border: 0.8px #ddd solid;
