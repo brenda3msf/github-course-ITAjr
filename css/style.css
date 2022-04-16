@@ -74,21 +74,29 @@ a {
   border-radius: 5px;
 }
 
+.or {
+  display: flex;
+  align-items: center;
+  ;
+}
+
 .or hr {
-  display: inline-block;
-  width: 9.2em;
+  font-display: center;
+  flex: 1 1 auto;
   background-color: #ddd;
+  height: 1px;
   margin: 0;
+  background-color: #1a5fb4;
   border: 0.8px #ddd solid;
 }
 
+
 .or p {
-  display: inline-block;
   font-size: 14px;
-  text-align: center;
+  flex: auto 1 auto;
   position: relative;
-  top: 3px;
-  margin: 18px 0;
+  padding: 5px;
+  margin: 18px 5px;
   color: #bbb;
 }
 
