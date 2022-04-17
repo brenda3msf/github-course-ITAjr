@@ -61,7 +61,7 @@ a {
   font-weight: 600;
   text-align: center;
   color: #d8c11a;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .form-wrap .form-group a:hover {
@@ -117,45 +117,48 @@ a {
   height: 65px;
   width: 200px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .imgs i {
   font-size: 2.26em;
-  flex: 1 1 auto;
+  flex: 1;
   text-align: center;
   cursor: pointer;
 }
 
 .fa-google {
-  float: left;
+  justify-self: flex-start;
   color: #DB4437;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 .fa-google:hover {
   color:#333;
+  font-size: 2em;
 }
 
 .fa-facebook {
+  justify-self: center;
   color: #4267B2;
-  transition: all 0.5s;
+  transition: all 0.2s;
   
 }
 
 .fa-facebook:hover {
   color:#333;
+  font-size: 2em;
 }
 
 .fa-twitter {
-  float: right;
+  justify-self: flex-end;
   color: #1DA1F2;
-  transition: all 0.5s;
+  transition: all 0.2s;
 }
 
 .fa-twitter:hover {
   color:#333;
+  font-size: 2em;
 }
 
 .form-wrap button {
@@ -169,7 +172,7 @@ a {
   padding: 10px;
   margin-top: 20px;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 .form-wrap button:hover {
@@ -190,7 +193,7 @@ footer {
 footer a {
   font-weight: 600;
   color: #d8c11a;
-  transition: all 0.3s;
+  transition: all 0.2s;
 }
 
 footer a:hover {
