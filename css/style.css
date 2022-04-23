@@ -16,8 +16,68 @@ a {
  text-decoration: none;
 }
 
+header {
+  background: #1b1b1b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  height: 11vh;
+  padding: 10px 10px;
+}
+
+header img {
+  display: block;
+  width: 150px;
+}
+
+ul {
+  list-style: none;
+}
+
+header nav {
+  align-self: stretch;
+}
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b1b1b;
+  color: #fff;
+  width: 100%;
+  height: 11vh;
+  padding: 0 50px;
+  transition: 0.5s;
+}
+
+.highlight {
+  color: #d8c11a;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: stretch;
+  align-content: center;
+  height: 100%;
+}
+
+.navbar ul a:hover, #current {
+  background: #333;
+  color: #d8c11a;
+}
+
+.navbar a {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 0 1px;
+  text-align: center;
+}
+
 #container {
-  margin: 34px auto;
+  margin: 35px auto 25px;
   max-width: 400px;
   padding: 12px;
 }
@@ -36,6 +96,7 @@ a {
   padding: 15px 25px;
   color: #333;
   border-radius: 8px;
+  box-shadow: 3px 3px 5px black;
 }
 
 .form-wrap h1 {
@@ -46,14 +107,14 @@ a {
 
 
 .form-wrap .form-group {
-  margin-top: 15px;
+  margin-top: 18px;
 }
 
 .form-wrap .form-group label {
   display: block;
   color: #666;
-  text-decoration: underline solid #d8c11a 5px;
-  margin-bottom: 8px;
+  text-decoration: underline solid #d8c11a 3.5px;
+  margin: 0.8rem 0;
 }
 
 .form-wrap .form-group a {
@@ -73,6 +134,11 @@ a {
   padding: 10px;
   border: 1px #ddd solid;
   border-radius: 5px;
+  box-shadow: 0.06rem 0.06rem 4px black;
+}
+
+.form-wrap .form-group input:focus {
+  box-shadow: none;
 }
 
 .or {
@@ -95,7 +161,7 @@ a {
   font-size: 14px;
   flex: auto 1 auto;
   padding: 5px;
-  margin: 18px 5px;
+  margin: 13px 5px;
   color: #bbb;
 }
 
@@ -135,7 +201,6 @@ a {
 
 .fa-google:hover {
   color:#333;
-  font-size: 2em;
 }
 
 .fa-facebook {
@@ -147,7 +212,6 @@ a {
 
 .fa-facebook:hover {
   color:#333;
-  font-size: 2em;
 }
 
 .fa-twitter {
@@ -158,7 +222,6 @@ a {
 
 .fa-twitter:hover {
   color:#333;
-  font-size: 2em;
 }
 
 .form-wrap button {
@@ -167,16 +230,19 @@ a {
   font-weight: 600;
   background-color: #05285b;
   color: #fff;
+  box-shadow: 0.06rem 0.06rem 4px black;
   border: none;
   border-radius: 5px;
   padding: 10px;
-  margin-top: 20px;
+  margin: 20px 0;
   cursor: pointer;
   transition: all 0.2s;
 }
 
+
 .form-wrap button:hover {
   background-color: #1a5fb4;
+  box-shadow: none;
 }
 
 .form-wrap .bottom-text {
@@ -199,4 +265,3 @@ footer a {
 footer a:hover {
   color: #E6D11F;
 }
-
