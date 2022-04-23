@@ -14,83 +14,67 @@ body {
 
 a {
  text-decoration: none;
-}
-
-header {
-  background: #1b1b1b;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  justify-items: center;
-  height: 11vh;
-  padding: 10px 10px;
-}
-
-header img {
-  display: block;
-  width: 150px;
+ color: #fff;
 }
 
 ul {
   list-style: none;
 }
 
-header nav {
-  align-self: stretch;
+/* Utilities */
+.highlight {
+  color: #d8c11a;
 }
 
-header .navbar {
+/* menu */
+.menu {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #1b1b1b;
-  color: #fff;
   width: 100%;
   height: 11vh;
   padding: 0 50px;
   transition: 0.5s;
 }
 
-.highlight {
-  color: #d8c11a;
+.menu img {
+  display: block;
+  width: 160px;
 }
 
-.navbar ul {
+.menu nav {
+  align-self: stretch;
+}
+
+.menu ul {
   display: flex;
   align-items: stretch;
   align-content: center;
   height: 100%;
 }
 
-.navbar ul a:hover, #current {
+.menu ul a:hover, #current {
   background: #333;
   color: #d8c11a;
 }
 
-.navbar a {
+.menu a {
   display: flex;
   align-items: center;
-  color: #fff;
   padding: 10px 20px;
   margin: 0 1px;
-  text-align: center;
 }
 
+/* Login area */
+
 #container {
-  margin: 35px auto 25px;
+  margin: 15vh auto 25px;
   max-width: 400px;
   padding: 12px;
 }
 
-#container .logo {
-  display: block;
-  position: relative;
-  left: 9px;
-  width: 352px;
-  margin-bottom: 45px;
-}
-
-
+/* Form */
 .form-wrap {
   background-color: #fff;
   padding: 15px 25px;
@@ -104,7 +88,6 @@ header .navbar {
   font-family: "lemonmilk", sans-serif;
   letter-spacing: 3px;
 }
-
 
 .form-wrap .form-group {
   margin-top: 18px;
@@ -141,6 +124,29 @@ header .navbar {
   box-shadow: none;
 }
 
+/* Login button */
+.form-wrap button {
+  display: block;
+  width: 100%;
+  font-weight: 600;
+  background-color: #05285b;
+  color: #fff;
+  box-shadow: 0.06rem 0.06rem 4px black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px 0;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+
+.form-wrap button:hover {
+  background-color: #1a5fb4;
+  box-shadow: none;
+}
+
+/* Division */
 .or {
   display: flex;
   align-items: center;
@@ -165,6 +171,7 @@ header .navbar {
   color: #bbb;
 }
 
+/* Media icons */
 .media {
   display: flex;
   align-items: center;
@@ -224,44 +231,59 @@ header .navbar {
   color:#333;
 }
 
-.form-wrap button {
-  display: block;
-  width: 100%;
-  font-weight: 600;
-  background-color: #05285b;
-  color: #fff;
-  box-shadow: 0.06rem 0.06rem 4px black;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
-  margin: 20px 0;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-
-.form-wrap button:hover {
-  background-color: #1a5fb4;
-  box-shadow: none;
-}
-
-.form-wrap .bottom-text {
-  font-size: 13px;
-  margin-top: 20px;
-}
-
-footer {
+/* Forgot password message */
+.fpassword {
  margin-top: 10px;
  text-align: center;
  color: #f4f4f4;
 }
 
-footer a {
+.fpassword a {
   font-weight: 600;
   color: #d8c11a;
   transition: all 0.2s;
 }
 
-footer a:hover {
+.fpassword a:hover {
   color: #E6D11F;
+}
+
+/* Other Medias Display */
+
+@media (max-width: 600px) {
+  /* Menu */
+  header {
+    padding-top: 1.2rem;
+    background: #1b1b1b
+  }
+  
+  .menu {
+    flex-direction: column;
+    height: 33.5vh;
+    padding: 0;
+  }
+  
+  .menu ul {
+    flex-direction: column;
+  }
+  
+  .menu a {
+    justify-content: center;
+  }
+
+  /* Login area */
+  #container {
+    margin: 5vh auto 4vh;
+    max-width: 400px;
+    padding: 12px;
+  }
+
+  /* Media */
+  .media {
+    flex-direction: column;
+  }
+
+  .media p {
+    margin-bottom: 1rem;
+  }
 }
