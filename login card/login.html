@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"/>
+    <link href="http://fonts.cdnfonts.com/css/lemonmilk" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/de54395cdb.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div id="navbar" class="navbar top">
+        <a href="home.html" class="logo"><img src="../img/Cópia de LogoITAJunior.png" alt=""></a>
+          <nav>
+              <ul>
+                  <a href="home.html"><li>Home</li></a>
+                  <a href="about.html"><li>Sobre Nós</li></a>
+                  <a id="current" class="highlight" href="login.html"><li>Login</li></a>
+              </ul>
+          </nav>
+      </div>
+    </header>
+
+    <div id="container">
+      <!-- <img src="../img/Logo Branca.png" alt="Logo ITAJr" class="logo"> -->
+      <div class="form-wrap">
+        <h1>LOGIN</h1>
+        <form>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Senha  </label>
+            <input type="password" name="password" id="password" />
+            <a href="#" class="forgot-password">Esqueceu a senha?</a>
+          </div>
+          <button type="submit" class="btn">Login</button>
+          <div class="or">
+            <hr>
+            <p> OU </p>
+            <hr>
+          </div>
+          <div class="media">
+            <p>Entre com: </p>
+            <div class="imgs">
+              <i class="fa-brands fa-google fa-duotone"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-twitter"></i>
+            </div>
+          </div>
+        </form>
+      </div>
+      <footer>
+        <p>Ainda não possui uma conta? <a href="#">Cadastre-se aqui!</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
